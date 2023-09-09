@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-image: url("https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpeg?cs=srgb&dl=pexels-hristo-fidanov-1252890.jpg&fm=jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+        }
+
+        
+        #sun{
+            height: 100px;
+            width: 100px;
+            border: 2px solid orange ;
+            border-radius: 50%;
+            background-image: radial-gradient(yellow , orange);
+            box-shadow: 2px 2px 20px orange;
+            margin:auto;
+            margin:100px;
+            position: static;
+        
+        }
+        .planet1{
+            height: 300px;
+            width: 300px;
+            
+            animation: planets 8s linear 0.2s infinite normal;
+           margin-left:50px;
+           margin-right:100px;
+           
+
+        }
+        #moon{
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+            border-radius: 50%;
+            background-color: grey;
+            margin: 20px;
+        }
+        
+        .planet2{
+            height: 400px;
+            width: 400px;
+            
+            animation: planets 8s linear 0.2s infinite normal; 
+            transform: translateY(-100px);
+            margin-right:100px;
+
+        
+        }
+        #moon1{
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+            border-radius: 50%;
+            background-color:red;
+            margin: 20px;
+        }
+        .planet3{
+            height: 500px;
+            width: 500px;
+            
+            animation: planets 8s linear 0.2s infinite normal;
+            margin: 80px;
+            margin-left:120px;
+           margin-right:150px;
+            
+        }
+        #moon2{
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+            border-radius: 50%;
+            background-color:lawngreen;
+            margin: 10px;
+        }
+        .planet4{
+            height: 600px;
+            width: 600px;
+            animation: planets 8s linear 0.2s infinite normal;
+            margin-left:50px;
+            margin-right:100px;
+
+        }
+        #moon3{
+            height: 70px;
+            width: 70px;
+            border: 2px solid;
+            border-radius: 50%;
+            background-color:blue;
+            margin: 10px;
+        }
+        @keyframes planets {
+            0%{ 
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+        }        
+    </style>
+</head>
+<body>
+    <div class="planet4">
+        <div id="moon3"></div>
+     <div class="planet3">
+                    <div id="moon2"></div>
+                       <div class="planet2">
+                        <div id="moon1"></div>
+                          <div class="planet1">
+                            <div id="moon"><div id="sun"></div></div>
+                          </div>
+                       </div>
+                    </div>
+      </div>
+    </div>
+    
+    
+</body>
+</html>

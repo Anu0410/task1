@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            height:100vh;
+            display: flex;
+            justify-content:space-between;
+        
+        }
+        .one{
+            height: 75px;
+            width: 100px;
+            background-color: black;
+            border-radius: 50%;
+            position: relative;
+            animation-name: bounce;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            display: flex;
+            justify-content:space-evenly;
+        }
+        @keyframes bounce{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            50%{
+                top: 500px;
+                left: 0px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+            
+        }
+        .two{
+            height: 75px;
+            width: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            position: relative;
+            animation-name: bounce;
+            animation-duration: 6s;
+            animation-timing-function:ease;
+            display: flex;
+            justify-content:space-evenly;
+        }
+       
+        .three{
+            height: 75px;
+            width: 100px;
+            background-color:yellow;
+            border-radius: 50%;
+            position: relative;
+            animation-name: bounce;
+            animation-duration: 6s;
+            animation-timing-function:ease-in;
+            display: flex;
+            justify-content:space-evenly;
+        }
+        
+        .four{
+            height: 75px;
+            width: 100px;
+            background-color: pink;
+            border-radius: 50%;
+            position: relative;
+            animation-name: bounce;
+            animation-duration: 6s;
+            animation-timing-function:ease-out;
+            display: flex;
+            justify-content:space-evenly;
+        }
+        
+        .five{
+            height: 75px;
+            width: 100px;
+            background-color: deeppink;
+            border-radius: 50%;
+            position: relative;
+            animation-name: bounce;
+            animation-duration: 6s;
+            animation-timing-function:ease-in-out;
+            display: flex;
+            justify-content:space-evenly;
+        }
+        
+        .six
+        {
+            height: 75px;
+            width: 100px;
+            background-color:purple;
+            border-radius: 50%;
+            position: relative;
+            animation-name: bounce;
+            animation-duration: 6s;
+            animation-timing-function: cubic-bezier(0, 0.6, 0.2, 1);
+            display: flex;
+            justify-content:space-evenly;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <nav>
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div class="five"></div>
+      <div class="six"></div>
+    </nav>
+    
+</nav>
+   
+</body>
+</html>
